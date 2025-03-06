@@ -3323,7 +3323,9 @@ section,
 
 /* About Page */
  /* About Us Page Styles */
-        
+
+
+
         .about-section {
             padding: 60px 0;
             background-color: #f8f9fa;
@@ -3365,7 +3367,7 @@ section,
         @media (max-width: 768px) {
             .about-box {
                 padding: 30px;
-                width: 90%;
+                
             }
 
             .single-heading {
@@ -3429,7 +3431,20 @@ section,
           padding-bottom: 0;
           margin-bottom:-30px;       
         }
+        
+        .industry-image{
+          height:500px;
+           width:100%;
+           margin-bottom:20px;
+           border-radius:20px;
+        }
 
+        @media (max-width: 991px) {
+          .industry-image{
+            height:400px;
+            
+          }
+        }
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
