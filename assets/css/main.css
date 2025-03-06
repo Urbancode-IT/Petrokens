@@ -2287,15 +2287,20 @@ section,
 
 .service-details .services-img {
   margin-bottom: 20px;
+  border-radius: 20px;
+  width: 470px;
+  height: 340px;
 }
 
 .service-details h3 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
 }
-
+.service-details h2{
+  color:var(--accent-color);
+}
 .service-details p {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .service-details ul {
@@ -2315,6 +2320,7 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
