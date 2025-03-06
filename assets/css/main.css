@@ -55,8 +55,14 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+p,
+a,
+li {
+  font-family: var(--body-font);
+  font-size: 18px;
+}
 
-a {
+a{
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
@@ -751,7 +757,7 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   --background-color: var(--alt-background-color);
-  --default-color: #ffffff;
+  --default-color: #444444;
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -772,11 +778,14 @@ h6 {
   padding: 0 0 10px 0;
   margin: 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .page-title .breadcrumbs ol li + li {
   padding-left: 10px;
+}
+.page-title .breadcrumbs ol li{
+  color:var(--default-color)
 }
 
 .page-title .breadcrumbs ol li + li::before {
@@ -3301,6 +3310,7 @@ section,
   margin-top: 6px;
   font-size: 13px;
 }
+<<<<<<< HEAD
 
 
 
@@ -3352,3 +3362,212 @@ section,
                 font-size: 2rem;
             }
         }
+=======
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Aligning Read More Button, Icon, and Paragraph */
+.services .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover Effect: Zoom-in Service Card */
+.services .service-item:hover {
+  transform: scale(1.04);
+}
+
+/* Icon Styling */
+.services .service-item i {
+  font-size: 36px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Change icon color to white on hover */
+.services .service-item:hover i {
+  color: #000000 !important;
+}
+
+.services .service-item h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.services .service-item p {
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+.services .service-item .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.services .service-item .read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  line-height: 0;
+  margin-top: 28px;
+}
+
+/* Cyan Theme */
+.services .service-item.item-cyan {
+  border-bottom: 3px solid #0dcaf0;
+}
+
+.services .service-item.item-cyan .icon {
+  color: #0dcaf0;
+  background: rgba(13, 202, 240, 0.8);
+}
+
+.services .service-item.item-cyan .read-more {
+ 
+  color: #0dcaf0;
+}
+
+.services .service-item.item-cyan:hover {
+  background: rgba(13, 202, 240, 0.2);
+}
+
+/* Orange Theme */
+.services .service-item.item-orange {
+  border-bottom: 3px solid #fd7e14;
+}
+
+.services .service-item.item-orange .icon {
+  color: #fd7e14;
+  background: rgba(253, 126, 20, 0.8);
+}
+
+.services .service-item.item-orange .read-more {
+  color: #fd7e14;
+}
+
+.services .service-item.item-orange:hover {
+  background: rgba(253, 126, 20, 0.2);
+}
+
+/* Teal Theme */
+.services .service-item.item-teal {
+  border-bottom: 3px solid #20c997;
+}
+
+.services .service-item.item-teal .icon {
+  color: #20c997;
+  background: rgba(32, 201, 151, 0.8);
+}
+
+.services .service-item.item-teal .read-more {
+  color: #20c997;
+}
+
+.services .service-item.item-teal:hover {
+  background: rgba(32, 201, 151, 0.2);
+}
+
+/* Red Theme */
+.services .service-item.item-red {
+  border-bottom: 3px solid #df1529;
+}
+
+.services .service-item.item-red .icon {
+  color: #df1529;
+  background: rgba(223, 21, 4, 0.8);
+}
+
+.services .service-item.item-red .read-more {
+  color: #df1529;
+}
+
+.services .service-item.item-red:hover {
+  background: rgba(223, 21, 41, 0.2);
+}
+
+/* Indigo Theme */
+.services .service-item.item-indigo {
+  border-bottom: 3px solid #6610f2;
+}
+
+.services .service-item.item-indigo .icon {
+  color: #6610f2;
+  background: rgba(102, 16, 242, 0.8);
+}
+
+.services .service-item.item-indigo .read-more {
+  color: #6610f2;
+}
+
+.services .service-item.item-indigo:hover {
+  background: rgba(102, 16, 242, 0.2);
+}
+
+/* Pink Theme */
+.services .service-item.item-pink {
+  border-bottom: 3px solid #f3268c;
+}
+
+.services .service-item.item-pink .icon {
+  color: #f3268c;
+  background: rgba(243, 38, 140, 0.8);
+}
+
+.services .service-item.item-pink .read-more {
+  color: #f3268c;
+}
+
+.services .service-item.item-pink:hover {
+  background: rgba(243, 38, 140, 0.2);
+}
+
+/* Hover Color Changes */
+.services .service-item:hover h3,
+.services .service-item:hover p,
+.services .service-item:hover .read-more {
+  color: #000000;
+}
+
+.services .service-item:hover .icon {
+  color: #fff;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+  .services .service-item {
+    height: auto;
+    padding: 20px;
+  }
+  .services .service-item p {
+    margin-bottom: 25px;
+  }
+}
+/*--------------------------------------------------------------
+# End of Services Section
+--------------------------------------------------------------*/
+>>>>>>> ed70fcb16c694f9a25975471a4fe8d9f660ae539
