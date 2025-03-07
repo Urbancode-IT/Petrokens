@@ -2327,6 +2327,21 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.service-details .info-item {
+  position: relative;
+  overflow: hidden;
+}
+.service-details .info-item:hover {
+  background-color:rgb(0, 86, 179,0.2);
+}
+.service-details .info-item .blue-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px; /* Adjust width as needed */
+  height: 100%;
+  background-color: var(--accent-color);
+}
 .service-details .snm-key{
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
   padding:0;
