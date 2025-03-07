@@ -14,7 +14,8 @@
   --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #0d4e9a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #ffffff;
+  --surface-color2:#cbd4db; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -63,13 +64,13 @@ li {
 }
 
 a{
-  color: var(--accent-color);
+  color:var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color:var(--surface-color2);
   text-decoration: none;
 }
 
@@ -551,7 +552,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
+  font-size: 4px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -648,6 +649,7 @@ h6 {
 }
 
 .footer .footer-contact p {
+
   margin-bottom: 5px;
 }
 
@@ -1114,6 +1116,12 @@ section,
   max-width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.clients p{
+  color: black;
+  font-size: 2px;
+  opacity: 0.3;
 }
 
 /* Marquee Wrapper */
@@ -1605,18 +1613,31 @@ section,
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px;
-  margin: 30px 15px;
-  position: relative;
-  height: 100%;
+  margin: 40px 30px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonials .testimonial-item .stars {
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 50px;
-  margin-right: 15px;
+  border-radius: 50%;
+  border: 4px solid var(--background-color);
+  margin: 0 auto;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1631,39 +1652,9 @@ section,
   margin: 0;
 }
 
-.testimonials .testimonial-item .stars {
-  margin: 10px 0;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 15px auto 15px auto;
+  margin: 0 auto 15px auto;
 }
 
 .testimonials .swiper-wrapper {
@@ -1676,8 +1667,8 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
@@ -1686,24 +1677,39 @@ section,
   background-color: var(--accent-color);
 }
 
-@media (max-width: 767px) {
-  .testimonials .testimonial-wrap {
-    padding-left: 0;
+.testimonials .swiper-slide {
+  opacity: 0.3;
+}
+
+.bold-text {
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 1199px) {
+  .testimonials .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .testimonials .swiper-pagination {
+    margin-top: 0;
   }
 
   .testimonials .testimonial-item {
-    padding: 30px;
-    margin: 15px;
-  }
-
-  .testimonials .testimonial-item .testimonial-img {
-    position: static;
-    left: auto;
+    margin: 40px 20px;
   }
 }
 
+@media (min-width: 1200px) {
+  .testimonials .swiper-slide-next {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+
 /*--------------------------------------------------------------
-# Gallery Section
+# Gallery Sectio
 --------------------------------------------------------------*/
 .gallery {
   overflow: hidden;
@@ -3190,9 +3196,17 @@ section,
 }
 
 .footer .footer-about p {
-  font-size: 14px;
-  font-family: var(--heading-font);
+  font-size: 16px;
+  font-family: var(--default-font);
 }
+
+.footer-links ul li i {
+    font-size: 1.2rem; /* Increase size */
+    font-weight: 900; /* Make it bolder */
+    margin-right: 8px; /* Spacing between icon and text */
+    display: inline-block;
+    transform: scale(1.3); /* Slightly enlarges the icon */
+  }
 
 .footer .social-links a {
   display: flex;
@@ -3209,7 +3223,7 @@ section,
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
+  color: white;
   border-color: var(--accent-color);
 }
 
@@ -3452,10 +3466,10 @@ section,
 
 .section-title p {
   color: var(--heading-color);
-  margin: 10px 0 0 0;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   font-family: var(--heading-font);
+  opacity: 0.3;
 }
 
 .section-title p .description-title {
@@ -3682,11 +3696,11 @@ section,
     height: auto;
     padding: 20px;
   }
-  .services .service-item p {
+  .services .service-item p 
+  {
     margin-bottom: 25px;
   }
 }
 /*--------------------------------------------------------------
 # End of Services Section
 --------------------------------------------------------------*/
->>>>>>> ed70fcb16c694f9a25975471a4fe8d9f660ae539
