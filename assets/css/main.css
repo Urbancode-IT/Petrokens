@@ -2403,8 +2403,9 @@ section,
 
 .service-details .pmc .icon-circle i {
   font-size: 32px;
-  color: #007BFF; /* Bootstrap primary color */
+  color: #000; /* Bootstrap primary color */
 }
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
