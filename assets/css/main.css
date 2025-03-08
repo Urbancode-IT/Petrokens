@@ -2231,7 +2231,9 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
-
+.service-details p{
+  text-align: justify;
+}
 .service-details .services-list a.active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
@@ -2328,19 +2330,22 @@ section,
   color: var(--accent-color);
 }
 .service-details .info-item {
+  padding: 90px 20px;
   position: relative;
   overflow: hidden;
+  
 }
 .service-details .info-item:hover {
   background-color:rgb(0, 86, 179,0.2);
 }
 .service-details .info-item .blue-bar{
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 0;
-  width: 10px; /* Adjust width as needed */
-  height: 100%;
+  width: 5px; /* Adjust width as needed */
+  height: 30%;
   background-color: var(--accent-color);
+  border-radius: 5px;
 }
 .service-details .snm-key{
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
@@ -2430,13 +2435,15 @@ section,
 /*--------------------------------------------------------------
 # Career page 
 --------------------------------------------------------------*/
-.career-page h2,h3,h4,h5{
-  color: var(--accent-color) !important;
-}
+
 .career-page .hov:hover {
-  background-color: #d0ebff; /* Light blue hover effect */
-  transition: background-color 0.3s ease-in-out;
+  background-color: #e5f2fc; /* Light blue hover effect */
+  transition: background-color 0.4s ease-in-out;
 }
+.career-page .cardbody{
+  padding:50px 20px;
+}
+
 .career-page .carousel-control-prev,
 .career-page .carousel-control-next {
     width: 10%; /* Adjust the width as needed */
@@ -2444,6 +2451,18 @@ section,
 }
 .career-page .jobs .card:hover{
 box-shadow: 0;
+}
+.career-page .icon-circle {
+  width: 70px;
+  height: 70px;
+  background: var(--accent-color); /* Primary Bootstrap color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 32px;
+  margin: 0 auto 15px;
 }
 
 
@@ -3814,7 +3833,7 @@ box-shadow: 0;
   .services .service-item p 
   {
     margin-bottom: 25px;
-  }
+}
 }
 /*--------------------------------------------------------------
 # End of Services Section
@@ -3826,7 +3845,7 @@ box-shadow: 0;
         /* Ensure All Cards Have the Same Height */
         .card {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: 0.3s;
+          transition: 0.4s;
           border: none;
           display: flex;
           flex-direction: column;
@@ -3835,7 +3854,7 @@ box-shadow: 0;
       }
 
       .card:hover {
-          transform: translateY(-5px);
+          transform: scale(1.05);
       }
 
       .card iframe {

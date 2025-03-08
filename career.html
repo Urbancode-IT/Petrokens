@@ -52,7 +52,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
 
             <li class="dropdown">
               <a href="aboutUs.html"
@@ -66,30 +66,30 @@
             </li>
 
             <li class="dropdown">
-              <a href="DigitalTransformation.html"
+              <a href="#"
                 ><span>Services</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="engineering.html">Engineering</a></li>
-                <li><a href="pmc.html">PMC</a></li>
+                <li><a href="services/engineering.html">Engineering</a></li>
+                <li><a href="/services/pmc.html">PMC</a></li>
                 <li>
-                  <a href="simulation-modelling.html"
+                  <a href="/services/simulation_and_modelling.html"
                     >Simulation & Modelling Analysis</a
                   >
                 </li>
-                <li class="dropdown">
+                <!-- <li class="dropdown"> -->
                   <a href="#"
                     ><span>Digital Transformation</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
+                    <!-- <i class="bi bi-chevron-down toggle-dropdown"></i
+                  >--></a>
+                  <!-- <ul>
                     <li><a href="#">AI & Data Science</a></li>
                     <li><a href="#">IoT & Automation</a></li>
                     <li><a href="#">Blockchain</a></li>
                     <li><a href="#">Cloud & Cybersecurity</a></li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </li>
 
@@ -99,20 +99,20 @@
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="#">Aerospace & Defence</a></li>
-                <li><a href="#">Automotive & Transportation</a></li>
+                <li><a href="/industries/aerospaceAndDefence.html">Aerospace & Defence</a></li>
+                <li><a href="/industries/automotiveAndTransportation.html">Automotive & Transportation</a></li>
                 <li>
-                  <a href="#"
+                  <a href="/industries/computationalEngineering.html"
                     >Computational Engineering & Industrial Modelling</a
                   >
                 </li>
-                <li><a href="#">Construction & Infrastructure</a></li>
-                <li><a href="#">Disaster, Safety & Risk Simulation</a></li>
-                <li><a href="#">Healthcare & Life Sciences</a></li>
-                <li><a href="#">Industrial Manufacturing & Logistics</a></li>
-                <li><a href="#">Offshore, Marine & Energy</a></li>
-                <li><a href="#">Oil & Gas</a></li>
-                <li><a href="#">Public Sector & Utilities</a></li>
+                <li><a href="/industries/constructionAndInfrastructure.html">Construction & Infrastructure</a></li>
+                <li><a href="/industries/disasterSafetyAndRiskManagement.html">Disaster, Safety & Risk Simulation</a></li>
+                <li><a href="/industries/healthcareAndLifeScience.html">Healthcare & Life Sciences</a></li>
+                <li><a href="/industries/industrialManufacturingAndLogistics.html">Industrial Manufacturing & Logistics</a></li>
+                <li><a href="/industries/offshoreMarineAndEnergy.html">Offshore, Marine & Energy</a></li>
+                <li><a href="/industries/oilAndGas.html">Oil & Gas</a></li>
+                <li><a href="/industries/publicSectorAndUtilities.html">Public Sector & Utilities</a></li>
               </ul>
             </li>
 
@@ -131,7 +131,7 @@
               <a href="clients.html">Clients</a>
             </li>
             <li><a href="career.html">Careers</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -148,7 +148,7 @@
                 rgba(0, 0, 0, 2),
                 rgba(0, 0, 0, 0.1)
               ),
-              url('../../assets/img/services/engineering.jpg');
+              url('../../assets/img/career1.jpeg');
             background-size: cover;
             background-position: right 38%;
             background-repeat: no-repeat;
@@ -182,15 +182,26 @@
     </main>
     
 
-    <section id="about" class="container my-5 p-0">
-      <h2>About Us</h2>
-      <p>At Petrokens, we believe that our people are our greatest asset. We are committed to creating a collaborative and inclusive work environment where every individual can thrive and excel. Our team is driven by a shared passion for innovation, excellence, and making a positive impact in the industries we serve.</p>
+    <section id="career-main-section" class="container my-5 p-0">
+      
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-12 order-2 order-lg-1 order-sm-2">
+          <h2>Join Us in Shaping the Future</h2>
+          <p>At Petrokens,  we believe that our people are our greatest asset. We are committed to creating a collaborative and inclusive work environment where every individual can thrive and excel. Our team is driven by a shared passion for innovation, excellence, and making a positive impact in the industries we serve. We are committed to driving innovation and excellence in everything we do. Join us on our journey to shape the future of engineering and technical services. Together, we can achieve great things</p>
+       </div>
+       <div class="col-lg-5 col-md-5 col-sm-12 order-1 order-lg-2 order-sm-1">
+        <img class="img-fluid rounded" src="assets/img/career.jpg" alt="Career"/>
+       </div>
+    </div>
   
       <h3 class="my-4">Why Work With Us?</h3>
       <div class="row">
           <div class="col-md-6 col-lg-3 mb-4">
               <div class="card hov text-center">
-                  <div class="card-body">
+                  <div class="card-body py-5">
+                    <div class="icon-circle">
+                      <i class="bi bi-people"></i>
+                    </div>
                       <h5 class="card-title">Dynamic Work Environment</h5>
                       <p class="card-text">Our collaborative work culture encourages creativity, innovation, and continuous learning.</p>
                   </div>
@@ -198,23 +209,32 @@
           </div>
           <div class="col-md-6 col-lg-3 mb-4">
               <div class="card hov text-center">
-                  <div class="card-body">
+                  <div class="card-body py-5">
+                    <div class="icon-circle">
+                      <i class="bi bi-bar-chart-line"></i>
+                  </div>
                       <h5 class="card-title">Career Growth</h5>
                       <p class="card-text">Access to training programs, mentorship, and opportunities for advancement.</p>
                   </div>
               </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-4">
-              <div class="card hov text-center">
-                  <div class="card-body">
-                      <h5 class="card-title">Diverse Opportunities</h5>
-                      <p class="card-text">Roles across Oil & Gas, Power, and Industrial sectors.</p>
+          <div class="col-md-6 col-lg-3 mb-4 \">
+            <div class="card hov text-center">
+                <div class="card-body py-5">
+                  <div class="icon-circle">
+                    <i class="bi bi-briefcase"></i>
                   </div>
+                  <h5 class="card-title">Diverse Opportunities</h5>
+                  <p class="card-text">Roles across Oil & Gas, Power, and Industrial sectors.</p>
+                </div>
               </div>
           </div>
           <div class="col-md-6 col-lg-3 mb-4">
               <div class="card hov text-center">
-                  <div class="card-body">
+                  <div class="card-body py-5">
+                    <div class="icon-circle">
+                      <i class="bi bi-heart-pulse"></i>
+                  </div>
                       <h5 class="card-title">Employee Well-being</h5>
                       <p class="card-text">Competitive compensation, comprehensive benefits, and work-life balance.</p>
                   </div>
@@ -223,154 +243,109 @@
       </div>
   </section>
 
-  <section id="jobs" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center">Current Job Openings</h2>
-        <div id="jobSlider" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Engineers</h5>
-                            <p class="card-text">Join our engineering team and help us design the future of energy solutions.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Project Managers</h5>
-                            <p class="card-text">Lead projects that drive innovation and sustainability.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Environmental Specialists</h5>
-                            <p class="card-text">Support our mission for a greener future through sustainable practices.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#jobSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#jobSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
+ 
 
 <section id="contact" class="container my-5 p-0">
   <h2>How to Apply</h2>
   <p>Ready to take the next step in your career? Send your resume and a cover letter to <strong>hr@petrokens.com</strong>. Our HR team will review your application and get in touch with you if there is a suitable match.</p>
 </section>
 
-<section id="joinus" class="container my-5 p-0">
-  <h2>Join Us in Shaping the Future</h2>
-  <p>At Petrokens, we are committed to driving innovation and excellence in everything we do. Join us on our journey to shape the future of engineering and technical services. Together, we can achieve great things</p>
-</section>  
+    
+
     <!-- Footer Section-->
     <footer id="footer" class="footer dark-background">
-        <div class="container footer-top">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6 footer-about">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">Petrokens</span>
-              </a>
-              <div class="footer-contact pt-3">
-                <p><strong>Corporate Office</strong></p>
-                <p>No.5, 1st Floor, Symtec Building</p>
-                <p>3rd Phase, SIDCO Industrial Estate,</p>
-                <p>Ekkattuthangal,</p>
-                <p>Chennai – 600032</p>
-                <p class="mt-3">
-                  <strong>Tel:</strong> 
-                  <a href="tel:+914423712018">+91 44 2371 2018</a>
-                </p>
-                <p><strong>Email:</strong> 
-                  <a href="mailto:contact@petrokens.com">contact@petrokens.com</a>
-                </p>
-              </div>
-              
-              
-              <div class="social-links d-flex mt-4">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#">Engineering</a></li>
-                <li><a href="#">PMC</a></li>
-                <li><a href="#">Simulation & Modelling </a></li>
-                <li><a href="#">Digital Transformation</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-3 footer-links">
-              <h4>Industries</h4>
-                 <ul>
-                    <li><a href="#">Aerospace & Defence</a></li>
-                    <li><a href="#">Automotive & Transportation</a></li>
-                    <li>
-                      <a href="#">Computational Engineering & Industrial Modelling</a>
-                    </li>
-                    <li><a href="#">Construction & Infrastructure</a></li>
-                    <li><a href="#">Disaster, Safety & Risk Simulation</a></li>
-                    <li><a href="#">Healthcare & Life Sciences</a></li>
-                    <li><a href="#">Industrial Manufacturing & Logistics</a></li>
-                    <li><a href="#">Offshore, Marine & Energy</a></li>
-                    <li><a href="#">Oil & Gas</a></li>
-                    <li><a href="#">Public Sector & Utilities</a></li>
-                  </ul>
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Petrokens</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p><strong>Corporate Office</strong></p>
+              <p>No.5, 1st Floor, Symtec Building</p>
+              <p>3rd Phase, SIDCO Industrial Estate,</p>
+              <p>Ekkattuthangal,</p>
+              <p>Chennai – 600032</p>
+              <p class="mt-3">
+                <strong>Tel:</strong> 
+                <a href="tel:+914423712018">+91 44 2371 2018</a>
+              </p>
+              <p><strong>Email:</strong> 
+                <a href="mailto:contact@petrokens.com">contact@petrokens.com</a>
+              </p>
             </div>
             
-  
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Insights</h4>
-              <ul>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">News</a></li>
-              </ul>
+            
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-        </div>
-  
-        <div class="container copyright text-center mt-4">
-          <p>
-            ©2025 <span>Copyright</span>
-            <strong class="px-1 sitename">Petrokens</strong>
-            <span>All Rights Reserved</span>
-          </p>
-          <div class="credits">
-            Designed by <a href="https://urbancode.in/">UrbanCode Edutech Pvt.Ltd.</a>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="career.html">Careers</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="./services/engineering.html">Engineering</a></li>
+              <li><a href="./services/pmc.html">PMC</a></li>
+              <li><a href="./services/simulation_and_modelling.html">Simulation & Modelling </a></li>
+              <li><a href="#">Digital Transformation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Industries</h4>
+               <ul>
+                  <li><a href="/industries/aerospaceAndDefence.html">Aerospace & Defence</a></li>
+                  <li><a href="/industries/automotiveAndTransportation.html">Automotive & Transportation</a></li>
+                  <li>
+                    <a href="/industries/computationalEngineering.html">Computational Engineering & Industrial Modelling</a>
+                  </li>
+                  <li><a href="/industries/constructionAndInfrastructure.html">Construction & Infrastructure</a></li>
+                  <li><a href="/industries/disasterSafetyAndRiskManagement.html">Disaster, Safety & Risk Simulation</a></li>
+                  <li><a href="/industries/healthcareAndLifeScience.html">Healthcare & Life Sciences</a></li>
+                  <li><a href="/industries/industrialManufacturingAndLogistics.html">Industrial Manufacturing & Logistics</a></li>
+                  <li><a href="/industries/offshoreMarineAndEnergy.html">Offshore, Marine & Energy</a></li>
+                  <li><a href="/industries/oilAndGas.html">Oil & Gas</a></li>
+                  <li><a href="/industries/publicSectorAndUtilities.html">Public Sector & Utilities</a></li>
+                </ul>
+          </div>
+          
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Insights</h4>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          ©2025 <span>Copyright</span>
+          <strong class="px-1 sitename">Petrokens</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          Designed by <a href="https://urbancode.in/">UrbanCode Edutech Pvt.Ltd.</a>
+        </div>
+      </div>
+    </footer>
       <!-- End of Footer Section-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      </body>
+     
+   
