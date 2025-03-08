@@ -224,7 +224,6 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -234,7 +233,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 65px;
+  max-height: 100px;
   margin-right: 8px;
 }
 
@@ -652,7 +651,10 @@ h6 {
 
   margin-bottom: 5px;
 }
-
+.footer .footer-contact a {
+  color:white;
+  
+}
 .footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -708,6 +710,12 @@ h6 {
 }
 
 .footer .credits {
+
+  margin-top: 6px;
+  font-size: 13px;
+}
+.footer .credits a {
+  color:white;
   margin-top: 6px;
   font-size: 13px;
 }
@@ -852,6 +860,7 @@ section,
   padding-bottom: 20px;
   position: relative;
   text-transform: uppercase;
+  color:black;
 }
 
 .section-title h2:after {
@@ -873,7 +882,8 @@ section,
 }
 .section-title p {
   margin-bottom: 0;
-  color: grey;
+  color:black;
+  
 }
 
 /*--------------------------------------------------------------
@@ -1038,7 +1048,9 @@ section,
   font-size: 34px;
   margin-bottom: 30px;
 }
-
+.about .content{
+  background-color: #000;
+}
 .about .content p {
   color: #000000;
   margin-bottom: 30px;
@@ -1090,7 +1102,7 @@ section,
 }
 
 .about .icon-box h4 a {
-  color: black;
+  color: --accent-color;
   transition: 0.3s;
 }
 
@@ -2393,11 +2405,29 @@ section,
 }
 
 
-.service-details .pmc .info-item{
-  padding:20px 10px;
+.service-details .pmc .info-item {
+  padding: 90px 20px;
   border-radius: 10px;
-  height:100%;
+  
+  height: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.service-details .pmc .info-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%; /* Adjust to set the starting position */
+  height: 50%; /* Adjust to control the height */
+  width: 5px; /* Border thickness */
+  background-color: var(--accent-color);
+  border-radius: 2px; /* Optional for rounded edges */
+}
+
+.service-details .pmc .info-item:hover {
+ transform: scale(1.05)!important;
 }
 .service-details .pmc .info-item i{
   font-size: 50px;
@@ -3476,8 +3506,8 @@ box-shadow: 0;
 
 
         .about-section {
-            padding: 60px 0;
-            background-color: #f8f9fa;
+            padding: 60px 20px;
+            background-color: #ffffff;
             display: flex;
             
         }
@@ -3594,12 +3624,18 @@ box-shadow: 0;
             
           }
         }
+        @media (max-width:768px) {
+          .industry-image{
+            height:220px;
+            
+          }
+        }
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 
 .section-title p {
-  color: var(--heading-color);
+  color:black;
   font-size: 20px;
   font-weight: 700;
   font-family: var(--heading-font);
@@ -3841,7 +3877,23 @@ box-shadow: 0;
 /*--------------------------------------------------------------
 # Contact Page
 /*--------------------------------------------------------------
+/* Aesthetic Cards - Same Height */
+.card {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  color: #333;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
 
+<<<<<<< HEAD
         /* Ensure All Cards Have the Same Height */
         .card {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -3856,38 +3908,73 @@ box-shadow: 0;
       .card:hover {
           transform: scale(1.05);
       }
+=======
+/* Subtle Hover Effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
 
-      .card iframe {
-          width: 100%;
-          height: 200px;
-          border: none;
-      }
+/* Video Embed (Iframe) */
+.card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 15px;
+}
+>>>>>>> 6397acf9101758797a99142c1d41b270d0415d6d
 
-      .card-body {
-          flex-grow: 1;
-          /* Makes all card bodies expand equally */
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-      }
+/* Ensures Content Aligns Nicely */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+}
 
-      /* Contact Links Styling */
-      .contact-link {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          font-weight: 600;
-          color: #007bff;
-          text-decoration: none;
-          transition: color 0.3s ease-in-out;
-      }
+/* Contact Links */
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color:black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
 
-      .contact-link:hover {
-          color: #0056b3;
-          text-decoration: underline;
-      }
+/* Hover Effect on Contact Links */
+.contact-link:hover {
+  color: black;
+  text-decoration: underline;
+}
 
-      .contact-link i {
-          font-size: 1.1rem;
-          color: #0056b3;
-      }
+/* Icon Styling */
+.contact-link i {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+      padding: 15px;
+      border-radius: 15px;
+  }
+
+  .card iframe {
+      height: 180px;
+  }
+
+  .card-body {
+      height: auto;
+  }
+}
+
+.card-text{
+  color:black;
+  opacity: 0.3;
+
+}
