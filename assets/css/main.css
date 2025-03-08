@@ -2507,11 +2507,42 @@ box-shadow: 0;
 /*--------------------------------------------------------------
 #Digital Transformation page 
 --------------------------------------------------------------*/
-.DigitalTransformation-page .digital-tab .nav-tabs{
+.digital-tab-section .nav-tabs{
   display: flex;
   justify-content: space-around;
 }
-
+.digital-tab-section .nav-pills .nav-link {
+  border-radius: 50px;
+  color: #0d4e9a;
+}
+.digital-tab-section .nav-pills .nav-link.active {
+  background-color: #0d4e9a;
+  color: white;
+}
+.digital-tab-section .tab-content {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .digital-tab-section .nav-pills {
+      flex-direction: column;
+  }
+  .tab-content {
+      padding: 15px;
+  }
+}
+.digital-tab-section .overview {
+  text-align: justify;
+}
+.digital-tab-section .section-title{
+  padding-bottom: 30px;
+}
+.digital-tab-section .tab-content{
+  padding:60px 30px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
 /*--------------------------------------------------------------
 # End of Digital Transformation page 
 --------------------------------------------------------------*/
