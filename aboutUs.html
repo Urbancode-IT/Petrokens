@@ -8,8 +8,8 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -21,22 +21,25 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="index-page">
@@ -44,17 +47,17 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="assets/img/Petrokens-logo.bmp" alt="" />
-          <h1 class="sitename"></h1>
+        <a href="/index.html" class="logo d-flex align-items-center me-auto">
+          <img src="../assets/img/logo.png" alt="" />
+          <h1 class="sitename">PETROKENS</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="/index.html">Home</a></li>
 
             <li class="dropdown">
-              <a href="#" class="active"
+              <a href="/aboutUs.html"
                 ><span>About Us</span>
                 </a>
               <!-- <ul>
@@ -70,25 +73,20 @@
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="services/engineering.html">Engineering</a></li>
+                <li><a href="#" class="active">Engineering</a></li>
                 <li><a href="/services/pmc.html">PMC</a></li>
-                <li>
-                  <a href="/services/simulation_and_modelling.html"
-                    >Simulation & Modelling Analysis</a
-                  >
-                </li>
-                <!-- <li class="dropdown"> -->
+                <li><a href="/services/simulation_and_modelling.html">Simulation & Modelling Analysis</a></li>
+                <li class="dropdown">
                   <a href="#"
                     ><span>Digital Transformation</span>
-                    <!-- <i class="bi bi-chevron-down toggle-dropdown"></i
-                  >--></a>
+                    </a>
                   <!-- <ul>
                     <li><a href="#">AI & Data Science</a></li>
                     <li><a href="#">IoT & Automation</a></li>
                     <li><a href="#">Blockchain</a></li>
                     <li><a href="#">Cloud & Cybersecurity</a></li>
-                  </ul>
-                </li> -->
+                  </ul> -->
+                </li>
               </ul>
             </li>
 
@@ -127,32 +125,44 @@
               </ul>
             </li>
             <li>
-              <a href="clients.html">Clients</a>
+              <a href="/clients.html">Clients</a>
             </li>
-            <li><a href="career.html">Careers</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/career.html">Careers</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
     </header>
 
-    <main class="main">
-        <div class="page-title">
-            <div class="heading"
-                style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('assets/img/aboutUs.jpg'); 
-                       background-size: cover; background-position: center; background-repeat: no-repeat; padding: 80px 0;">
-                <div class="container">
-                    <div class="row d-flex">
-                        <div class="col-lg-8">
-                            <h1 class="about-heading" data-aos="fade-up">About Us</h1>
-                            <p class="about-subtitle" data-aos="fade-up" data-aos-delay="200">
-                                Delivering trusted engineering solutions in oil & gas, infrastructure, and industrial sectors, leveraging expertise in design, project management, advanced simulation, and digital transformation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <main class="main">   
+      <!-- Page Title -->
+      <div class="page-title">
+        <div
+          class="heading"
+          style="
+            background-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 2),
+                rgba(0, 0, 0, 0.1)
+              ),
+              url('../../assets/img/aboutUs.jpg');
+            background-size: cover;
+            background-position: right 38%;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="container">
+            <div class="row d-flex">
+              <div class="col-lg-8">
+                <h1>About Us</h1>
+                <p class="mb-0">
+                  Delivering trusted engineering solutions in oil & gas, infrastructure, and industrial sectors, leveraging expertise in design, project management, advanced simulation, and digital transformation.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
             <!--Breadcrumbs-->
             <nav class="breadcrumbs">
             <div class="container">
@@ -167,7 +177,7 @@
         <!-- About Us Section Inside a Full Box -->
         <section class="about-section">
             <div class="container">
-                <div class="about-box" data-aos="fade-up">
+                <div class="about-boxdvdv" data-aos="fade-up">
                     <h2 class="single-heading">Petrokens Engineering and Services Pvt Ltd</h2>
                     <p>Petrokens Engineering and Services Pvt Ltd is an ISO 9001:2015 Certified best-in-class integrated engineering consultancy solutions provider. We are diversified and renowned in the engineering consultancy services domain. We are operating from Chennai, Tamil Nadu, India.</p>
 

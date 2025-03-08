@@ -8,8 +8,8 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -21,22 +21,25 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="index-page">
@@ -44,17 +47,17 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="assets/img/Petrokens-logo.bmp" alt="" />
-          <h1 class="sitename"></h1>
+        <a href="/index.html" class="logo d-flex align-items-center me-auto">
+          <img src="../assets/img/logo.png" alt="" />
+          <h1 class="sitename">PETROKENS</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
 
             <li class="dropdown">
-              <a href="aboutUs.html"
+              <a href="/aboutUs.html"
                 ><span>About Us</span>
                 </a>
               <!-- <ul>
@@ -70,25 +73,20 @@
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="services/engineering.html">Engineering</a></li>
+                <li><a href="#" class="active">Engineering</a></li>
                 <li><a href="/services/pmc.html">PMC</a></li>
-                <li>
-                  <a href="/services/simulation_and_modelling.html"
-                    >Simulation & Modelling Analysis</a
-                  >
-                </li>
-                <!-- <li class="dropdown"> -->
+                <li><a href="/services/simulation_and_modelling.html">Simulation & Modelling Analysis</a></li>
+                <li class="dropdown">
                   <a href="#"
                     ><span>Digital Transformation</span>
-                    <!-- <i class="bi bi-chevron-down toggle-dropdown"></i
-                  >--></a>
+                    </a>
                   <!-- <ul>
                     <li><a href="#">AI & Data Science</a></li>
                     <li><a href="#">IoT & Automation</a></li>
                     <li><a href="#">Blockchain</a></li>
                     <li><a href="#">Cloud & Cybersecurity</a></li>
-                  </ul>
-                </li> -->
+                  </ul> -->
+                </li>
               </ul>
             </li>
 
@@ -127,29 +125,51 @@
               </ul>
             </li>
             <li>
-              <a href="#" class="active">Clients</a>
+              <a href="#">Clients</a>
             </li>
-            <li><a href="career.html">Careers</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/career.html">Careers</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
     </header>
 
-
-    <main class="main">
-
-
-       
-
+    <main class="main">   
+      <!-- Page Title -->
+      <div class="page-title">
+        <div
+          class="heading"
+          style="
+            background-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 2),
+                rgba(0, 0, 0, 0.1)
+              ),
+              url('../../assets/img/services/engineering.jpg');
+            background-size: cover;
+            background-position: right 38%;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="container">
+            <div class="row d-flex">
+              <div class="col-lg-8">
+                <h1>Clients</h1>
+                <p class="mb-0">
+                  Providing innovative and reliable engineering solutions for the oil & gas, infrastructure, and industrial sectors, backed by expertise in design, project management, advanced simulation, and digital transformation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Clients Section -->
         <section id="client-page" class="client-page section light-background">
 
              <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-            <h2>Our Clients</h2>
-            <p>We are proud to collaborate with leading organizations across various industries.</p>
+            <h2>Our Valued Partners Worldwide</h2>
+            <p>Trusted by Industry Leaders</p>
         </div><!-- End Section Title -->
 
             <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
@@ -303,19 +323,17 @@
         </section>
         <!-- End Clients Section -->
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section">
+       <!-- Testimonials Section -->
+       <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+        </div>
+        <!-- End Section Title -->
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="swiper init-swiper">
-                    <script type="application/json" class="swiper-config">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
@@ -340,126 +358,173 @@
                 }
               }
             </script>
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Mr.Subramanian</h3>
-                                <h4> Director&amp;SR Engineering PS, Singapore</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Petrokens Engineering has consistently exceeded our expectations. Their
-                                        attention to detail,
-                                        professionalism, and ability to meet tight deadlines make them a trusted
-                                        partner. I highly recommend
-                                        them for anyone seeking top-notch engineering services.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Dato Sharman K Michael</h3>
-                                <h4>Executive Director &amp; Steel Hawk Engineering Sdn Bhd, Malaysia</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Petrokens Engineering has consistently exceeded our expectations. Their
-                                        attention to detail,
-                                        professionalism, and ability to meet tight deadlines make them a trusted
-                                        partner. I highly recommend
-                                        them for anyone seeking top-notch engineering services.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Mr.Senthil Kumar</h3>
-                                <h4>CEO &amp; Peritum International LLP, Almaty, Kazakhstan</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>We have been working with Petrokens Engineering for several
-                                        years. Petrokens Engineering has been exceptional and their
-                                        servicing unsurpassed. I highly recommend them to anyone who
-                                        wants great engineering on time and always with competitive pricing.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>John Anderson</h3>
-                                <h4>CEO of Anderson Industries</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Working with Petrokens Engineering has been a game-changer for our projects.
-                                        Their expertise,
-                                        reliability, and commitment to delivering high-quality engineering solutions on
-                                        time have been truly
-                                        impressive. We can always count on them for competitive pricing and exceptional
-                                        service.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>Sarah Mitchell</h3>
-                                <h4> Operations Manager at Mitchell Constructions</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Petrokens Engineering has consistently exceeded our expectations. Their
-                                        attention to detail,
-                                        professionalism, and ability to meet tight deadlines make them a trusted
-                                        partner. I highly recommend
-                                        them for anyone seeking top-notch engineering services.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                    </div>
-                    <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <h3>Mr.Subramanian</h3>
+                  <h4>Director&amp;SR Engineering PS, Singapore</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Petrokens Engineering has consistently exceeded our
+                      expectations. Their attention to detail, professionalism,
+                      and ability to meet tight deadlines make them a trusted
+                      partner. I highly recommend them for anyone seeking
+                      top-notch engineering services.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
                 </div>
+              </div>
+              <!-- End testimonial item -->
 
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <h3>Dato Sharman K Michael</h3>
+                  <h4>
+                    Executive Director &amp; Steel Hawk Engineering Sdn Bhd,
+                    Malaysia
+                  </h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Petrokens Engineering has consistently exceeded our
+                      expectations. Their attention to detail, professionalism,
+                      and ability to meet tight deadlines make them a trusted
+                      partner. I highly recommend them for anyone seeking
+                      top-notch engineering services.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <h3>Mr.Senthil Kumar</h3>
+                  <h4>
+                    CEO &amp; Peritum International LLP, Almaty, Kazakhstan
+                  </h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >We have been working with Petrokens Engineering for
+                      several years. Petrokens Engineering has been exceptional
+                      and their servicing unsurpassed. I highly recommend them
+                      to anyone who wants great engineering on time and always
+                      with competitive pricing.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <h3>John Anderson</h3>
+                  <h4>CEO of Anderson Industries</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Working with Petrokens Engineering has been a
+                      game-changer for our projects. Their expertise,
+                      reliability, and commitment to delivering high-quality
+                      engineering solutions on time have been truly impressive.
+                      We can always count on them for competitive pricing and
+                      exceptional service.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img
+                    src="assets/img/testimonials/testimonials-5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  /> -->
+                  <h3>Sarah Mitchell</h3>
+                  <h4>Operations Manager at Mitchell Constructions</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Petrokens Engineering has consistently exceeded our
+                      expectations. Their attention to detail, professionalism,
+                      and ability to meet tight deadlines make them a trusted
+                      partner. I highly recommend them for anyone seeking
+                      top-notch engineering services.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
             </div>
-
-        </section><!-- /Testimonials Section -->
-
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
     </main>
 
 
