@@ -2427,7 +2427,30 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*--------------------------------------------------------------
+# Career page 
+--------------------------------------------------------------*/
+.career-page h2,h3,h4,h5{
+  color: var(--accent-color) !important;
+}
+.career-page .hov:hover {
+  background-color: #d0ebff; /* Light blue hover effect */
+  transition: background-color 0.3s ease-in-out;
+}
+.career-page .carousel-control-prev,
+.career-page .carousel-control-next {
+    width: 10%; /* Adjust the width as needed */
+    opacity: 0.8; /* Optional: make them slightly transparent */
+}
+.career-page .jobs .card:hover{
+box-shadow: 0;
+}
 
+
+
+/*--------------------------------------------------------------
+# End of  Career page 
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Blog Posts Section
 --------------------------------------------------------------*/
